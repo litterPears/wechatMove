@@ -1,0 +1,8 @@
+/* components/nav/nav.wxss */
+.mainSwiper{
+  padding:0 30rpx;
+  height:50rpx;
+  line-height:50rpx;
+  font-size:30rpx;
+  color:#f4ea2a;
+}

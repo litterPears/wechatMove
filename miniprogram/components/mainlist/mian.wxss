@@ -1,0 +1,88 @@
+/* components/mainlist/mian.wxss */
+.mainList{
+  padding:0 30rpx;
+  height:auto;
+  overflow:hidden;
+}
+.titleTop{
+  display:flex;
+  justify-content: center;
+  align-items: center
+}
+.titles{
+  padding:0 30rpx;
+  line-height:60rpx;
+  height:60rpx;
+  color:#404040;
+  text-align: center;
+  font-size:28rpx;
+  background:#ffbe00;
+  border-radius:30rpx;
+  margin:20rpx auto;
+  display:inline-block;
+}
+.color{
+  color:#d81e06;
+}
+.mainLists{
+  overflow:hidden;
+}
+.mainLis{
+  min-height:100rpx;
+  border-radius:20rpx;
+  background:#eee;
+  padding:15rpx 20rpx;
+  margin-bottom:40rpx;
+}
+.mainImg{
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+  height:150rpx;
+  margin:10rpx auto;
+}
+.mainImage{
+  width:150rpx;
+  height:150rpx;
+  display:block;
+  border-radius:20rpx;
+  margin-right:25rpx;
+}
+.shuoming{
+  height:150rpx;
+  overflow: hidden
+}
+.shuoming .moives{
+  height:30rpx;
+  line-height:30px;
+  color:#aa0000;
+  font-size:26rpx;
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-wrap: no-wrap;
+  margin:15rpx 0 10rpx 0;
+}
+.spans{
+  height:30rpx;
+  line-height:30rpx;
+  font-size:18rpx;
+  padding:0 5rpx;
+  background:#ffbe00;
+  color:#f00;
+  margin-left:15rpx;
+  border-radius:10rpx;
+  display:line-block;
+}
+.moivesSpan{
+  height:50rpx;
+  line-height:50rpx;
+  color:#404040;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  font-size:24rpx;
+}
+.mr10{
+  margin-right:20rpx;
+}

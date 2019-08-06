@@ -1,0 +1,49 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<view class="detailMain">
+  <view class="detailTitle">
+    <view class="detailLeft">
+      <view class="titles">{{detailList.title}}</view>
+      <view class="titleMings">
+        <text>评分 <text style="color:#fa0000;">{{detailList.rating.average}}</text> </text>
+        <text class="titleTs">{{detailList.ratings_count}}人评价</text>
+      </view>
+      <view class="titleMings titleLange">语言：
+        <text class="languages" wx:for="{{detailList.languages}}" wx:for-item="items" wx:key="index">
+          <text>{{items}}</text>
+          <text wx:if="{{detailList.languages.length > (index+1)}}">/</text>
+        </text>
+      </view>
+      <view class="titleMings titleLange">上映地：
+        <text class="languages" wx:for="{{detailList.countries}}" wx:for-item="items" wx:key="index">
+          <text>{{items}}</text>
+          <text wx:if="{{detailList.countries.length > (index+1)}}">/</text>
+        </text>
+      </view>
+      <view class="titleMings titleLange">
+        <text class="languages">上映时间：<text>{{detailList.mainland_pubdate}}</text></text>
+        <text class="languages ml20">时长：<text>{{detailList.durations[0]}}</text></text>
+      </view>
+    </view>
+    <view class="detailRight">
+      <image class="detailImage" src="{{detailList.images.large}}"/>
+    </view>
+  </view>
+  <!-- 下方的展示部分 -->
+  <view class="detailMain">
+    <!-- 参与人员 -->
+    <view class="detailPreson">
+      <view class="moveName">作者/导演：</view>
+      <view class="preson1" wx:for="{{detailList.directors}}" wx:key="index">
+        <image class="imageTag" src="{{item.avatars.medium}}"/>
+        <view class="names">{{item.name}}</view>
+      </view>
+    </view>
+    <view class="detailPreson">
+      <view class="moveName">导演/演员：</view>
+      <view class="preson1" wx:for="{{detailList.casts}}" wx:key="index">
+        <image class="imageTag" src="{{item.avatars.medium}}"/>
+        <view class="names">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

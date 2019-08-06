@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "components-swiper":"../../components/swipers/swiper",
+    "components-main": "../../components/mainlist/mian",
+    "components-nav":"../../components/nav/nav"
+  }
+}

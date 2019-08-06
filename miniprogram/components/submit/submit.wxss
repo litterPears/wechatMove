@@ -1,0 +1,13 @@
+/* components/submit/submit.wxss */
+.submitData{
+  width:70%;
+  height:50rpx;
+  line-height:50rpx;
+  border-radius:25rpx;
+  background:#fff;
+  position:fixed;
+  top:30rpx;
+  left:50%;
+  margin-left:-35%;
+  z-index:10;
+}

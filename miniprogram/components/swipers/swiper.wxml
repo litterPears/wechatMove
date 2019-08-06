@@ -1,0 +1,17 @@
+<!--components/swipers/swiper.wxml-->
+<view class="positionRelative">
+  <swiper class="swiperContent"
+    indicator-dots="{{options.indicatorDots}}" 
+    indicator-color="{{options.indicatorDots}}" 
+    indicator-active-color="{{options.indicatorColor}}"
+    autoplay="{{options.autoplay}}"
+    interval="{{options.interval}}"
+    duration="{{options.duration}}"
+    circular="{{options.circular}}">
+    <swiper-item class="swiperItem" wx:for="{{listPages}}" wx:key="index">
+      <navigator class="navigators" url="/pages/detail/detail?id={{item.subject.id}}">
+        <image class="images" src="{{item.subject.images.large}}"/>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>

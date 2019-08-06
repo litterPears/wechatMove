@@ -1,0 +1,10 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view>
+    <!-- 首页轮播 -->
+    <components-swiper></components-swiper>
+    <!-- 告之窗 -->
+    <!-- <components-nav></components-nav> -->
+    <!-- 下方的主体部分 -->
+    <components-main wx:for="{{dataLists}}" title="{{item.title}}" dataList="{{item.subjects}}" wx:key="index"></components-main>
+</view>
+

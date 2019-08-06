@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/user/user",
+    "pages/word/word"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "微票",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#404040",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#eee",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "asist/image/tab/home_no.png",
+        "selectedIconPath": "asist/image/tab/home.png"
+      },
+      {
+        "pagePath": "pages/word/word",
+        "text": "影院",
+        "iconPath": "asist/image/tab/fen_no.png",
+        "selectedIconPath": "asist/image/tab/fen.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "asist/image/tab/user_no.png",
+        "selectedIconPath": "asist/image/tab/user.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

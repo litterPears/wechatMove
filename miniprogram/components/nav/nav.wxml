@@ -1,0 +1,9 @@
+<!--components/nav/nav.wxml-->
+<view class="mainSwiper">
+  <swiper autoplay="{{options.autoplay}}" interval="{{options.interval}}" duration="{{options.duration}}" circular="{{options.circular}}" vertical="{{options.vertical}}">
+    <swiper-item >
+
+    </swiper-item>
+  </swiper>
+</view>
+

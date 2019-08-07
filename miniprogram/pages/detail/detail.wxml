@@ -30,19 +30,44 @@
   </view>
   <!-- 下方的展示部分 -->
   <view class="detailMain">
+    <view class="moveName">简介:</view>
+    <view class="words">{{detailList.summary}}</view>
     <!-- 参与人员 -->
     <view class="detailPreson">
       <view class="moveName">作者/导演：</view>
-      <view class="preson1" wx:for="{{detailList.directors}}" wx:key="index">
-        <image class="imageTag" src="{{item.avatars.medium}}"/>
-        <view class="names">{{item.name}}</view>
+      <view class="moveLists">
+        <view class="preson1" wx:for="{{detailList.directors}}" wx:key="index" bindtap="presonMessage" data-id="{{item.id}}">
+          <image class="imageTag" src="{{item.avatars.medium}}"/>
+          <view class="names">{{item.name}}</view>
+        </view>
       </view>
     </view>
     <view class="detailPreson">
       <view class="moveName">导演/演员：</view>
-      <view class="preson1" wx:for="{{detailList.casts}}" wx:key="index">
-        <image class="imageTag" src="{{item.avatars.medium}}"/>
-        <view class="names">{{item.name}}</view>
+      <view class="moveLists">
+        <view class="preson1" wx:for="{{detailList.casts}}" wx:key="index" bindtap="presonMessage" data-id="{{item.id}}">
+          <image class="imageTag" src="{{item.avatars.medium}}"/>
+          <view class="names">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 集锦 -->
+    <view class="moveName" wx:if="{{detailList.bloopers.length > 0}}">集锦：</view>
+    <view class="movegats" wx:for="{{detailList.bloopers}}" wx:key="index" wx:if="{{detailList.bloopers.length > 0}}">
+      <components-video title="{{item.title}}" urlHref="{{item.resource_url}}" posterImg="{{item.medium}}"></components-video>
+    </view>
+    <!-- 评论区 -->
+    <view class="comment" wx:if="{{detailList.popular_comments.length > 0}}">
+      <view class="moveName">评论区：</view>
+      <view class="commentList" wx:for="{{detailList.popular_comments}}" wx:key="index">
+        <view class="nameTitle">
+            <view class="namest">
+              <image class="imageAuther" src="{{item.author.avatar}}"/>
+              <text>{{item.author.name}}</text>
+            </view>
+            <text class="timest">{{item.created_at}}</text>
+        </view>
+        <view class="textComment">{{item.content}}</view>
       </view>
     </view>
   </view>

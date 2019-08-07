@@ -1,0 +1,15 @@
+<!--components/video/video.wxml-->
+<view class="videoMain">
+    <video class="videos" 
+    controls="{{options.controls}}" 
+    autoplay="{{options.autoplay}}" 
+    loop="{{options.loop}}" 
+    muted="{{options.muted}}"
+    show-fullscreen-btn="{{options.showFullscreenBtn}}"
+    show-mute-btn="{{options.showMuteBtn}}"
+    title="{{title}}"
+    src="{{urlHref}}"
+    poster="{{posterImg}}">
+    </video>
+    <view class="titles">{{title}}</view>
+</view>

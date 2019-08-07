@@ -1,2 +1,19 @@
 <!--miniprogram/pages/word/word.wxml-->
-<text>miniprogram/pages/word/word.wxml</text>
+<view class="cinema">
+  <view class="tables">
+    <text class="span">电影口碑榜</text>
+    <text class="span">电影新片榜</text>
+    <text class="span">北美票房榜</text>
+  </view>
+  <view class="positonDiv"></view>
+  <view class="cinemaMain">
+    <view class="cinemaList">
+      <view class="lefts">
+
+      </view>
+      <view class="rights">
+  
+      </view>
+    </view>
+  </view>
+</view>

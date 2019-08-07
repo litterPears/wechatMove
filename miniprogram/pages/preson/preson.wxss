@@ -1,0 +1,162 @@
+/* miniprogram/pages/preson/preson.wxss */
+.personMains{
+  padding:0 30rpx;
+  height:auto;
+  margin-bottom:20rpx;
+}
+.presonTop{
+  width:100%;
+  height:200rpx;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.presonLeft{
+  width:60%;
+  height:150rpx;
+}
+.presonRight{
+  width:40%;
+  height:200rpx;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  padding-left:20rpx;
+}
+.presonName{
+  height:40rpx;
+  line-height:40rpx;
+  font-size:25rpx;
+  color:#404040;
+  border-bottom:1rpx solid #fff;
+  margin:15rpx 0 15rpx 0;
+}
+.presonwork{
+  height:30rpx;
+  line-height:30rpx;
+  font-size:20rpx;
+  color:#9a9a9a;
+  margin-top:5rpx;
+}
+.repsonFlex{
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+.textColor{
+  color:#404040;
+}
+.textC{
+  margin-right:15rpx;
+  color:#404040;
+}
+.detailImage{
+  width:200rpx;
+  height:200rpx;
+  display:block;
+}
+.presonMain{
+  width:100%;
+  height:auto;
+  margin-top:30rpx;
+}
+.presonName{
+  line-height:50rpx;
+  height:50rpx;
+  font-size:25rpx;
+  color:#404040;
+}
+.presonwords{
+  line-height:40rpx;
+  font-size:24rpx;
+  color:#404040;
+  text-indent:48rpx;
+  padding-bottom:20rpx;
+  margin-bottom:30rpx;
+  text-align:justify;
+}
+.presonWork{
+  padding:0 30rpx;
+  height:auto;
+}
+.workli{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  height:auto;
+  padding:20rpx;
+  margin:20rpx auto;
+  background:#fff;
+  border-radius:6rpx;
+}
+.liLeft{
+  width:40%;
+  height:200rpx;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.leftImage{
+  width:200rpx;
+  height:200rpx;
+  display:block;
+}
+.liright{
+  width:60%;
+  height:200rpx;
+}
+.rightTitle{
+  line-height:60rpx;
+  height:60rpx;
+  font-size:30rpx;
+  color:#99ee00;
+}
+.rightTitle2{
+  line-height:40rpx;
+  font-size:22rpx;
+  color:#9a9a9a;
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.timers{
+  margin-right:20rpx;
+  color:#aaa;
+}
+.spantext{
+  color:#bebe00;
+}
+.spanLists{
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.startTime{
+    line-height:40rpx;
+    height:40rpx;
+    color:#9a9a9a;
+    font-size:22rpx;
+}
+.workList{
+  line-height:50rpx;
+  height:50rpx;
+  color:#9a9a9a;
+  font-size:22rpx;
+  display:flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.textColor{
+  color:#c00;
+}
+.workImages{
+  padding:0 30rpx;
+  height:auto;
+  margin-bottom:4rpx;
+}
+.workImg{
+  display:block;
+  width:500rpx;
+  height:500rpx;
+  margin:40rpx auto;
+}

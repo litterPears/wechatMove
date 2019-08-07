@@ -29,8 +29,8 @@
 }
 .mainLis{
   min-height:100rpx;
-  border-radius:20rpx;
-  background:#eee;
+  border-radius:10rpx;
+  background:#fff;
   padding:15rpx 20rpx;
   margin-bottom:40rpx;
 }
@@ -45,7 +45,7 @@
   width:150rpx;
   height:150rpx;
   display:block;
-  border-radius:20rpx;
+  border-radius:8rpx;
   margin-right:25rpx;
 }
 .shuoming{
@@ -62,6 +62,7 @@
   align-items:center;
   flex-wrap: no-wrap;
   margin:15rpx 0 10rpx 0;
+  overflow:hidden;
 }
 .spans{
   height:30rpx;

@@ -1,0 +1,65 @@
+<!--miniprogram/pages/preson/preson.wxml-->
+<view class="personMains">
+  <view class="presonTop">
+      <view class="presonLeft">
+          <view class="presonName" style="border:none;">
+              姓名：<text class="textColor">{{presonList.name}}</text>
+          </view>
+          <view class="presonwork">
+              性别：<text class="textC">{{presonList.gender}}</text>
+              出生日期：<text class="textC">{{presonList.birthday}}</text>
+          </view>
+          <view class="presonwork">
+              国籍：<text class="textC">{{presonList.born_place}}</text>
+              星座：<text class="textC">{{presonList.constellation}}</text>
+          </view>
+          <view class="presonwork repsonFlex">
+              <text>职业：</text>
+              <text class="repsonFlex" wx:for="{{presonList.professions}}" wx:key="index" wx:if="{{item !=''}}">
+                <text>{{item}}</text>
+                <text wx:if="{{presonList.professions.length > (index+1)}}">/</text>
+              </text>
+          </view>
+      </view>
+      <view class="presonRight">
+        <image class="detailImage" src="{{presonList.avatars.large}}"/>
+      </view>
+  </view>
+  <!-- 下方部分 -->
+  <view class="presonMain">
+    <view class="presonName">简介:</view>
+    <view class="presonwords">{{presonList.summary}}</view>
+    <!-- 作品 -->
+    <view class="presonName" wx:if="{{presonList.works.length > 0}}">作品:</view>
+    <view class="presonWork" wx:if="{{presonList.works.length > 0}}">
+      <view class="workli" wx:for="{{presonList.works}}" wx:key="index">
+        <view class="liLeft">
+          <image class="leftImage" src="{{item.subject.images.medium}}"/>
+        </view>
+        <view class="liright">
+          <view class="rightTitle">{{item.subject.title}}</view>
+          <view class="rightTitle2">
+              <view class="timers">时长：<text class="spantext">{{item.subject.durations[0]}}</text></view>
+              <text class="spanLists" wx:for="{{item.subject.genres}}" wx:key="index" wx:for-item="kat">
+                <text>{{kat}}</text>
+                <text wx:if="{{item.subject.genres.length >(index+1)}}">/</text>
+              </text>
+          </view>
+          <view class="startTime">上映时间：<text class="spantext">{{item.subject.mainland_pubdate}}</text></view>
+          <view class="workList">
+            <text>担任职务：</text>
+            <text wx:for="{{item.roles}}" wx:key="index" wx:for-item="ages" class="spanLists">
+              <text class="textColor">{{ages}}</text>
+              <text wx:if="{{item.roles.length >(index+1)}}">/</text>
+            </text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 作品照 -->
+    <view class="presonName" wx:if="{{presonList.photos.length > 0}}">剧照:</view>
+    <view class="workImages" wx:if="{{presonList.photos.length > 0}}">
+      <image class="workImg" wx:for="{{presonList.photos}}" wx:for-item="imgcon" wx:key="index" src="{{imgcon.image}}" alt="图片丢失"/>
+    </view>
+  </view>
+</view>

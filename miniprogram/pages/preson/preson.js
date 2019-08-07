@@ -1,18 +1,36 @@
-// miniprogram/pages/word/word.js
+// miniprogram/pages/preson/preson.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    presonList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (options){
+    console.log(this.options.id);
+    let id = this.options.id;
+    let that = this;
+    wx.request({
+      method: "GET",
+      url: 'https://douban.uieee.com/v2/movie/celebrity/'+id,
+      header: {
+        "Content-Type": "application/xml" // 默认值
+      },
+      success(res){
+        console.log(res);
+        that.setData({
+          presonList:res.data
+        })
+      },
+      fail(error){
+        console.log(error);
+      }
+    })
   },
 
   /**
@@ -26,20 +44,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let that = this;
-    wx.request({
-      method:'GET',
-      url: 'https://douban.uieee.com/v2/movie/weekly',
-      header: {
-        "Content-Type": "application/xml" // 默认值
-      },
-      success(res){
-        console.log(res);
-      },
-      fail(error){
-        console.log(error);
-      }
-    })
+
   },
 
   /**

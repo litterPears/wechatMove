@@ -18,6 +18,10 @@
   font-size:30rpx;
   color:#404040;
   font-weight:600;
+  width:100%;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .titleMings{
   line-height:30rpx;
@@ -58,24 +62,45 @@
   height:200rpx;
   display:block;
 }
+.words{
+  line-height:40rpx;
+  font-size:24rpx;
+  color:#404040;
+  text-indent:48rpx;
+  padding-bottom:20rpx;
+  margin-bottom:30rpx;
+  text-align:justify;
+}
 .detailPreson{
   width:100%;
-  display:flex;
-  justify-content:flex-start;
-  align-items: center;
+  height:auto;
 }
 .moveName{
-  
+  line-height:50rpx;
+  height:50rpx;
+  font-size:25rpx;
+  color:#404040;
+  border-bottom:1rpx solid #fff;
+  margin:20rpx 0 30rpx 0;
+}
+.moveLists{
+  width:100%;
+  height:auto;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-wrap: wrap;
 }
 .preson1{
   width:33.33%;
+  height:auto;
   margin-bottom:30rpx;
 }
 .imageTag{
   width:120rpx;
   height:120rpx;
   display:block;
-  margin:10rpx auto;
+  margin:20rpx auto;
 }
 .names{
   line-height:40rpx;
@@ -83,4 +108,52 @@
   text-align:center;
   font-size:24rpx;
   color:#404040;
+}
+.movegats{
+  width:100%;
+  height:auto;
+  margin-bottom:40rpx;
+}
+.comment{
+  width:100%;
+  height:auto;
+  margin-bottom:50rpx;
+}
+.commentList{
+  padding:20rpx 10rpx;
+  height:auto;
+  background:#fff;
+  border-radius:8rpx;
+  margin:15rpx auto;
+}
+.nameTitle{
+  height:40rpx;
+  line-height:40rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:22rpx;
+  color:#404040;
+  padding-bottom:20rpx;
+  border-bottom:1rpx solid #aaa;
+}
+.imageAuther{
+  width:40rpx;
+  height:40rpx;
+  border-radius: 20rpx;
+  margin-right:20rpx;
+}
+.namest{
+  width:50%;
+  display:flex;
+  justify-content:flex-start;
+  align-content: center;
+}
+.textComment{
+  line-height:40rpx;
+  font-size:24rpx;
+  text-indent:48rpx;
+  padding:20rpx 15rpx;
+  color:#404040;
+  text-align: justify;
 }

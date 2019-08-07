@@ -80,5 +80,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  //任务详情
+  presonMessage(e){
+    let ids = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '/pages/preson/preson?id='+ids
+    })
   }
 })
